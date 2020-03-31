@@ -26,3 +26,4 @@ class _BreakReturn(gdb.Command):
         for breakpoint in breakpoints:
             breakpoint._siblings = breakpoints
 
+_BreakReturn()  # register the command with GDB
